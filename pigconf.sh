@@ -11,9 +11,8 @@ mnode='172.17.0.2'
 enode='172.17.0.5'
 nodes='172.17.0.3 172.17.0.4'
 
-for ip in $mnode $enode $nodes
-do
-	ssh $user@$ip << EOF
+for ip in $mnode $enode $nodes; do
+	ssh $user@"$ip" <<'EOF'
 
 	if [ $ip == $mnode ]
 	then
@@ -36,7 +35,7 @@ do
 	\nexport PATH=\$PIG_HOME\/bin:\$PATH' /home/$user/.bashrc
 
 	source ~/.bashrc
-		
+
 	logout
 
 EOF
