@@ -1,3 +1,7 @@
-hadoopconf
-----------
-Scripts for installation and configuration of hadoop, hbase, hive, pig, spark
+Scripts for installation and configuration of hadoop, hbase, hive, pig, spark:
+
+    ./hadoopconf.sh
+    ./hbaseconf.sh
+    ./hiveconf.sh
+    ./pigconf.sh
+    ./sparkconf.sh
